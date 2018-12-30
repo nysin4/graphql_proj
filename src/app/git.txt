@@ -6,4 +6,7 @@ git init
 git add
 git commit -m "<commit_message>"
 git pull --rebase
-git push origin master
+git push [-f] origin master
+
+git fetch https://github.com/nysin4/graphql_proj.git master
+git pull origin master
