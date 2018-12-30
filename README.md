@@ -1,2 +1,4 @@
 # graphql_proj
-Navigation App
+Trello
+https://trello.com/b/hheBeSAV/graphql-shortest-path-project
+
