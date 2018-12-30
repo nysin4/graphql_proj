@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+        Indoor Floor Plan
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <div *ngIf="loading">
+        Loading...
+    </div>
+    <div *ngIf="error">
+        Error :(
+    </div>
+    <div *ngIf="rates">
+        <table border="1">
+            <th>Currency</th>
+            <th>Rate</th>
+            <ng-container *ngFor="let r of rates">
+                <tr>
+                    <td>{{r.currency}}</td>
+                    <td>{{r.rate}}</td>
+                </tr>
+                
+            </ng-container>
+        </table>
+    </div>
+</ion-content>

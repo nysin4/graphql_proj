@@ -1,0 +1,5 @@
+git config --global user.name "<your_username>"
+git config --global user.email "<your_email>"
+git remote add origin https://github.com/nysin4/graphql_proj.git
+
+git init

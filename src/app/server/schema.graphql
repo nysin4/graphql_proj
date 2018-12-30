@@ -1,0 +1,46 @@
+type Building {
+    id: ID!
+    name: String
+    description: String
+    imagePath: String
+} 
+
+type Floor {
+    id: ID!
+    building: Building!
+    name: String
+    layer: Float
+}
+
+type Location {   
+    id: ID!
+    floor: [Floor]!
+    type: LocationType
+    name: String
+    description: String
+    imagePath: String
+    hotspots: [Hotspot!]!
+}
+
+type Hotspot {
+    id: ID!
+    floor: Floor!
+    name: String
+}    
+
+enum LocationType {
+    TOILET, 
+    SHOP, 
+    LIFT
+} 
+
+type Distance {
+    id: ID!
+    fromHotspot: Hotspot!
+    toHotspot: Hotspot!
+    distance: Float!
+}
+
+type Query {
+    building: [Building]
+}

@@ -1,0 +1,8 @@
+npm install properties-reader
+npm install log4js
+npm install neo4j
+npm install graphql
+npm install neo4j-driver
+npm install neo4j-graphql-js
+npm install apollo-server
+npm install log4js
