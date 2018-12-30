@@ -3,3 +3,7 @@ git config --global user.email "<your_email>"
 git remote add origin https://github.com/nysin4/graphql_proj.git
 
 git init
+git add
+git commit -m "<commit_message>"
+git pull --rebase
+git push origin master
